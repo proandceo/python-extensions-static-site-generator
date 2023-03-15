@@ -6,7 +6,7 @@ from ssg import extensions, hooks
 class Site:
     def __init__(self, source, dest, parsers=None):
         self.source = Path(source)
-        self.dest = Path(dest)"<ul>\n{}<ul>\n{}"
+        self.dest = Path(dest)
         self.parsers = parsers or []
 
     def create_dir(self, path):
